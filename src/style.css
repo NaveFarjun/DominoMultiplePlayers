@@ -1,0 +1,455 @@
+.btn {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    border-style: solid;
+    background-color: #d0f3e8;
+    border-color: #d0f3e8;
+    margin: 0 3px;
+}
+
+.chat-base-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+}
+
+.chat-base-container .user-info-area {
+    margin: 8px;
+    font-size: 16px;
+}
+
+.login-page-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-wrapper .taki-logo {
+    width: 250px;
+    margin: 16px 0;
+}
+
+.login-page-wrapper .username-label {
+    margin: 0 5px;    
+    font-size: 18px;
+}
+
+.login-page-wrapper .username-input {    
+    font-size: 16px;
+    line-height: 16px;
+    margin: 1px;
+    border: 1px solid #ccc;   
+}
+
+.login-page-wrapper .submit-btn:hover {
+    background-color: #cadcff;
+    border-color: #cadcff;
+}
+
+.login-page-wrapper .login-error-message {
+    color: red;
+    font-weight: 600;
+}
+.showDelBtnRoom{
+    background-color: red;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.hideDelBtnRoom{
+    visibility: hidden;
+}
+.chat-contaier {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-contaier .converssion-area-wrpper {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    margin: 3px;
+    padding: 8px;
+}
+
+.chat-contaier .converssion-area-wrpper p{
+    margin: 0 0 8px 0;
+}
+
+.chat-contaier .chat-input-wrapper {
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+}
+
+.chat-contaier .chat-input-wrapper input{
+    line-height: 16px;
+    font-size: 16px;
+    margin: 1px;
+    height: 48px;
+    padding: 8px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.chat-contaier .chat-input-wrapper .btn {
+    flex-grow: 0;
+    width: 88px;
+    margin: 0 2px 0 5px;
+}
+.hideJoinRoom{
+    visibility: hidden;
+}
+.hideChooseRoom{
+    visibility: hidden;
+}
+.hideLeaveRoom{
+    visibility: hidden;
+}
+.hideJoinBtnRoom{
+    visibility: hidden;
+}
+.hide{
+    visibility: hidden;
+}
+
+.showLeaveRoom{
+    background-color: red;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.showJoinBtnRoom{
+    background-color: #4CAF50;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.showChooseRoom{
+    background-color: #4CAF50;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.logoutBtn{
+    background-color: red;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.showPlayBtn{
+    background-color: #4CAF50;
+    left:82px;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.hidePlayBtn{
+    visibility: hidden;
+}
+.main{
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+}
+.table, th, td {
+    width: 480px;
+    height: 50px;
+    text-align: center;
+  }
+.valid{
+    background-color: aqua;
+  }
+.yesMargin{
+    background-color: lightgreen;
+}
+.noMargin{
+    background-color:white;
+}
+.FirstLeft{
+    transform: rotate(270deg);
+    
+}
+.FirstRight{
+    transform: rotate(90deg);
+}
+.Firstup{
+    transform: rotate(0deg);
+}
+.FirstDown{
+    transform: rotate(180deg);
+}
+
+.scroll{
+    margin-left: 20px;
+    height: 520px;
+    width: 600px;
+    overflow: auto;
+    background-color: #4CAF50;
+}
+.scroll2{
+  margin-left: 70px;
+  height: 100px;
+  width: 100px;
+  overflow: auto;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .left{
+    position: absolute;
+    top:83%;
+    left: 13px;
+    width: 200px;
+    height: 120px;
+  }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .right{
+    position: absolute;
+    top:30%;
+    left: 1000px;
+    width: 200px;
+    height: 120px;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+  }
+  .right2{
+    position: absolute;
+    left: 500px;
+    top:30%;
+  
+  }
+
+  .form_style {
+    float: left;
+    margin: 1.858736059%;
+    width: 25%;
+
+  }
+  .flash {
+    animation-name: flash;
+     animation-duration: 0.2s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-play-state: running;
+ }
+ 
+ @keyframes flash {
+     from {color: red;}
+     to {color: black;}
+ }
+ @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  .blink {
+    animation: blink 1s step-start 0s infinite;
+    -webkit-animation: blink 1s step-start 0s infinite;
+  }
+  .centerTwo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+
+  }
+  .StatsBar{
+    width:100%;
+    border: 1px solid black;
+    background-color: #5b8858;
+    border-collapse: collapse;
+    height:70px;
+    color:white;
+    font-family: Courier;
+    font-style: bold;
+}
+.StatsBar:hover{
+    width:100%;
+    border: 1px solid black;
+    background-color: #06A85F;
+    border-collapse: collapse;
+    height:70px;
+    
+}
+.statusBarTd
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: gold;
+  color: gray;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: gold;
+  color: gray;
+}
+.namesInTheEndOfGame{
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .css {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /*tr:nth-child(even){background-color: #f2f2f2}*/
+  
+  .css2 {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+.table, th, td {
+    width: 480px;
+    height: 50px;
+    text-align: center;
+  }
+.valid{
+    background-color: aqua;
+  }
